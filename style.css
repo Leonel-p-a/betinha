@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #ba00ba7e, #1b0118);
+    color: #fff;
+    padding: 50px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    padding: 45px 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: 100px;
+    }
+}
